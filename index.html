@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <link rel="shortcut icon" href="src/icon.svg" type="image/x-icon">
+  <title>Truth or Dare</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="center1">
+          <h2 id="mode" onclick="showCategories()">▾category: none</h2>
+          <div id="categories" style="display: none;">
+            <p>Выберите категорию:</p>
+            <button type="button" onclick="selectCategory('berserk')">berserk</button>
+            <button type="button" onclick="selectCategory('anime')">anime</button>
+            <button type="button" onclick="selectCategory('movies')">movies</button>
+          </div>
+          <h1>Правда или действие</h1>
+          <h3 id="question">Текст вопроса</h3>
+          <div class="prikol">
+            <button type="button" id="truth">Правда</button>
+            <p class="or">или</p>
+            <button type="button" id="dare">Действие</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer">
+          <p class="poweredby">powered by Rekxqu <a href="https://vk.com/dr.eff0d" target="_blank"><img src="src/vk.svg" alt="" class="icons"></a><p>
+          <p class="vers">Version 1.1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
